@@ -142,7 +142,7 @@ def aggregate_by_time(df, time_dim):
 # 3. 看板主逻辑
 # ===========================
 def main():
-    data_path = os.path.join(os.path.dirname(__file__), 'data', '毛利目标.xlsx')
+    data_path = os.path.join(os.path.dirname(__file__), '毛利目标.xlsx')
     if not os.path.exists(data_path):
         st.error(f"❌ 找不到数据文件，请确认文件位于：`{data_path}`")
         st.stop()
